@@ -1,5 +1,6 @@
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
 }
 header {
     background-color: rgb(155, 100, 206);
@@ -138,6 +139,10 @@ footer {
     align-items:center;
     gap: 15px;
 }
+.societies > div {
+    background-color:rgb(216, 216, 216);
+    border-radius: 50px;
+}
 .societies > div > .buttons > div {
     background-color: rgb(224, 231, 237);
     width: 700px;
@@ -148,4 +153,78 @@ footer {
     text-align:center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     padding: 10px 0;
+}
+/* Page title */
+.page-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    border: 2px solid #2f0b3e;
+    border-radius: 100px;
+    background-color: rgb(251, 252, 253);
+    padding: 10px 30px;
+}
+
+/* Container for all events */
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 30px;
+}
+
+/* Each event card */
+.event-card {
+    width: 65%;
+    margin: 40px auto;
+    overflow: hidden;
+
+    min-height: 420px;
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-position: center center;
+
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.event-content {
+    position:absolute;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.55);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Event title */
+.event-content h1, h2, p, a {
+    margin: 10px 0;
+}
+
+/* Buttons */
+.register-btn {
+    display: inline-block;
+    padding: 10px 26px;
+    font-size: 16px;
+    color: white;
+    background: #8a4de8;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+.register-btn:hover {
+    background: #6e38bf;
+    transform: scale(1.05);
 }
