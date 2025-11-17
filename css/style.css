@@ -3,8 +3,8 @@
     text-decoration: none;
 }
 header {
-    background-color: rgb(155, 100, 206);
-    color:rgb(227, 236, 245);
+    background-color: rgb(165, 148, 249);
+    color:white;
     text-align: center;
     width: auto;
     height: 100px;
@@ -12,9 +12,18 @@ header {
     border: 2px solid #2f0b3e;
     border-radius: 50px;
 }
-
+.website-description {
+    background: #f3e9ff;
+    border: 3px solid #3c1c64;
+    padding: 35px 45px;
+    border-radius: 60px;
+    width: 80%;
+    margin: 30px auto 40px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 .nav-bar {
-    background-color: rgb(213, 201, 223);
+    background-color: rgb(245, 239, 255);
     display: flex;
     flex-direction: row;
     padding: 10px 25px;
@@ -36,13 +45,15 @@ header {
 .nav-bar img{
     background: transparent;
 }
+.nav-bar img:hover {
+    transform: scale(1.08);
+}
 body {
-    background-color: rgb(194, 148, 238);
+    background-color: rgb(205, 193, 255);
     padding: 40px;
 }
 .about {
     border-radius: 50px;
-    background-color: rgb(194, 148, 238);
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -60,7 +71,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 .about-text {
-    background-color: rgb(224, 231, 237);
+    background-color: rgb(245, 239, 255);
     width: 600px;
     height: auto;
     position: center;
@@ -70,121 +81,145 @@ body {
     text-align: center;
 }
 .features {
-    border-radius: 30px;
-    height: 250px;
-    background-color: rgb(209, 181, 236);
-    display: flex; 
+    border-radius: 40px;
+    background-color: rgb(229, 217, 242, 0.92);
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 40px;
     gap: 30px;
-    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .features > div {
-    background-color: rgb(224, 231, 237);
-    width: auto;
-    height: 140px;
-    position:center;
+    background-color: rgb(245, 239, 255);
     border: 2px solid #2f0b3e;
     border-radius: 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
+    padding: 25px 30px;
     flex: 1;
-    margin: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.features > div:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
 footer {
-    display: flex;
-    flex-wrap:wrap;
-    gap:40px;
-    align-items:last baseline;
-    background-color:  rgb(213, 201, 223);
-    text-align: center;
-    font-size: 14px;
+    background-color:  rgb(245, 239, 255);
     margin: 10px auto;
     border: 2px solid #2f0b3e;
     border-radius: 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     padding: 20px;
-    gap: 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+.footer-left, .footer-right {
+    font-size: 16px;
 }
-.footer-icons {
+.icons {
   display: flex;
-  justify-content:flex-end;
   align-items: center;
   gap: 18px;
 }
-.footer-icons a img {
+.icons a img {
   transition: transform 0.2s ease;
   border-radius: 50%;
 }
+.icons img:hover {
+    transform: scale(1.08);
+}
 .societies {
     text-align: center;
-    background-color: rgb(213, 201, 223);
     border: 2px solid #2f0b3e;
-    border-radius: 50px;
+    border-radius: 35px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     margin: 10px auto;
-    padding: 30px;
+    padding: 35px;
+    background-image: url('../images/fast4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+/*Alignment of each button within the society class*/
 .buttons {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     align-items:center;
     gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
 }
+/*For every society*/
 .societies > div {
-    background-color:rgb(216, 216, 216);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background:rgb(245, 239, 255, 0.55);
     border-radius: 50px;
+    padding: 20px;
+    margin: 25px 0;
 }
+.societies > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+/*Designing of each button*/
 .societies > div > .buttons > div {
-    background-color: rgb(224, 231, 237);
-    width: 700px;
-    height: 50px;
+    background: #8a4de8;
+    width: 270px;
+    height: 55px;
     border: 2px solid #2f0b3e;
     border-radius: 100px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     text-align:center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    padding: 10px 0;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-/* Page title */
-.page-title {
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 40px;
-    border: 2px solid #2f0b3e;
-    border-radius: 100px;
-    background-color: rgb(251, 252, 253);
-    padding: 10px 30px;
+.societies > div > .buttons a {
+    color: white;
+    text-decoration: none;
+}
+.societies > div > .buttons > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
 }
 
 /* Container for all events */
 .events-container {
+    background-image: url('../images/fast4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+    border: 2px solid #2f0b3e;
+    margin: 25px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     gap: 50px;
     padding: 10px 30px;
 }
 
 /* Each event card */
 .event-card {
-    width: 65%;
+    width: 350px;
     margin: 40px auto;
     overflow: hidden;
 
     min-height: 420px;
     background-image: var(--bg-img);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 
     border-radius: 25px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
@@ -198,17 +233,25 @@ footer {
 
 .event-content {
     position:absolute;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.55);
     padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.4);
     max-width: 600px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
 }
-
+.event-content:hover {
+    transform: translateY(-6px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
 /* Event title */
-.event-content h1, h2, p, a {
+.event-content h1,
+.event-content h2,
+.event-content p,
+.event-content a{
     margin: 10px 0;
 }
 
