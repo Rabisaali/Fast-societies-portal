@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>join</title>
+    <title>Join your favorite society</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header> 
-        <h1 class="page-title">Join Your Favorite Society</h1>
+        <div class="header-container">
+            <h1 class="page-title">Join Your Favorite Society</h1>
+            <p>Be the part of vibrant campus societies</p>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search societies...">
+        </div>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <a href="index.html" class="home-icon">🏠</a>
 
     </header>
-
+    <button id="backToTop">⬆</button>
     <div class="events-container">
 
         <div class="event-card" style="--bg-img: url('../images/sportics.jpg')">

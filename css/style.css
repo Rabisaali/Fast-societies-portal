@@ -7,11 +7,105 @@ header {
     color:white;
     text-align: center;
     width: auto;
-    height: 100px;
-    padding: 20px;
     border: 2px solid #2f0b3e;
     border-radius: 50px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
+
+.theme-btn {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    background: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dark-mode {
+    background: linear-gradient(#1d1730, #2b2340);
+    color:  #3a3254;
+}
+
+.dark-mode .theme-btn {
+    background: #3a3254;
+    color: #f3eaff;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+    color: #3a3254 !important;
+}
+
+
+.dark-mode .search-bar {
+    background: #6c51ac;
+    border-color: #A983FF;
+}
+.search-bar {
+    margin-top: 20px;
+    width: 350px;
+    padding: 12px 18px;
+    border-radius: 30px;       /* makes rounded pill shape */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8); /* light pastel like your card */
+    color: #000;   /* makes text visible */
+}
+
+.search-bar::placeholder {
+    color: #555;   /* softer grey placeholder */
+}
+
+.home-icon {
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.home-icon {
+    position: fixed;
+    left: 10px;
+    top: 30px;
+    background: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dark-mode .home-icon {
+    background: #3a3254;
+    color: #f3eaff;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4c2a85;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
 .website-description {
     background: #f3e9ff;
     border: 3px solid #3c1c64;
@@ -41,6 +135,7 @@ header {
     justify-content: center;
     gap: 50px;
     padding: 20px 20px;
+    list-style: none;
 }
 .nav-bar img{
     background: transparent;
@@ -48,6 +143,19 @@ header {
 .nav-bar img:hover {
     transform: scale(1.08);
 }
+#nav-tooltip {
+  position: absolute;
+  background: #ffffff;
+  color: #0f0e0e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+
+
 body {
     background-color: rgb(205, 193, 255);
     padding: 40px;
@@ -162,9 +270,11 @@ footer {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     background:rgb(245, 239, 255, 0.55);
+    background-size: cover;
     border-radius: 50px;
     padding: 20px;
     margin: 25px 0;
+
 }
 .societies > div:hover {
     transform: translateY(-3px);
@@ -215,7 +325,6 @@ footer {
     width: 350px;
     margin: 40px auto;
     overflow: hidden;
-
     min-height: 420px;
     background-image: var(--bg-img);
     background-size: cover;
@@ -235,6 +344,7 @@ footer {
     position:absolute;
     backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.55);
+    background-size: cover;
     padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.4);

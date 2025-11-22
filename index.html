@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Societies Portal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Fast Societies Portal</h1>
         <p>Everything in a single place!</p>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
     </header>
     <nav class="nav-bar">
         <br>
         <ul class="images">
-        <a href="societies.html"><img src="images/home-icon-house.png" alt="Home icon" width="40" height="40"></a></li>
-        <a href="events.html"><img src="images/events-icon.png" alt="Events icon" width="30" height="30"></a></li>
-        <a href="join.html"><img src="images/join-icon.png" alt="Join icon" width="40" height="40"></a></li>
+        <li><a href="societies.html"><img class="nav-item" src="images/home-icon-house.png" alt="Home icon" width="40" height="40" data-description="Explore the campus societies"></a></li>
+        <li><a href="events.html"><img class="nav-item" src="images/events-icon.png" alt="Events icon" width="30" height="30" data-description="Get to know the exciting events"></a></li>
+        <li><a href="join.html"><img class="nav-item" src="images/join-icon.png" alt="Join icon" width="40" height="40" data-description="Be part of the exciting societies"></a></li>
         </ul>
     </nav>
+    <div id="nav-tooltip"></div>
+
     <br>
     <div class="website-description">
         <h2>About This Portal</h2>

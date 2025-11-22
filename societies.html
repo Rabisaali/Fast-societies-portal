@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Societies</title>
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Societies of FAST</h1>
-        <p>Get to know the amazing societies that bring life to our campus.</p>
+        <div class="header-container">
+            <h1>Societies of FAST</h1>
+            <p>Get to know the amazing societies that bring life to our campus.</p>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search societies...">
+        </div>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <a href="index.html" class="home-icon">🏠</a>
         <br>
     </header>
+    <button id="backToTop">⬆</button>
     <main class="societies">
         <br>
-        <div class="Sportics">
+        <div class="society-card Sportics">
             <h2>Sportics</h2>
             <p>FAST SPORTICS Society firmly believes in an environment where students that are surrounded with educational responsibilities, are provided a room for sports, physical activities, and exercise which not only helps them stay active but also increases their learning capacity. SPORTICS organizes different games like outdoor sports: volleyball, Cricket, Throw-ball, Basketball, and Football or indoor: Table tennis, Snooker, and Foosball.</p>
             <div class="buttons">
@@ -27,7 +34,7 @@
             </div>
         </div>
         <br>
-        <div class="Decs">
+        <div class="society-card Decs">
             <h2>Dramatics and Extra-Curricular Society (DECS)</h2>
             <p>DECS has always been on the go in planning extra-curricular activities such as picnics for the FASTians which prove to be both exhilarating and exclusive. The annual picnic, Drama Competition, Annual Tour, and the very formal Annual Dinner are some elite events organized by DECS which almost ALWAYS rock! 
             </p>
@@ -41,7 +48,7 @@
             </div>
         </div>
         <br>
-        <div class="TLC">
+        <div class="society-card TLC">
             <h2>The Literary Club (TLC)</h2>
             <p>
                 TLC gives students a hub to express their passion for all things art and literature related. Boasting a plethora of diverse competitions that range from declamations and debates to themed events catered to arts and literature we assure you that everyone will find a niche that caters to their interests and will be able to discuss it with fellow enthusiasts.</p>
@@ -55,7 +62,7 @@
             </div> 
         </div>
         <br>
-        <div class="TNC">
+        <div class="society-card TNC">
             <h2>Think n Create (TnC)</h2>
             <p>The objective of the committee is to develop within students, skill sets related to the industry. They shall be introduced to the current technical, managerial, and ethical aspects of expertise in use or desired. Therefore, this is to ensure our fresh graduates are more industry-worthy and more confident in interviews. Moreover, TNC provides students with a resourceful platform for Projects and Research.</p>
             <div class="buttons">
@@ -65,7 +72,7 @@
             </div> 
         </div>
         <br>
-        <div class="FCC">
+        <div class="society-card FCC">
             <h2>FAST Creators Crew (FCC)</h2>
             <p>The FAST Creators Crew is a dynamic student society dedicated to providing comprehensive media coverage for all events happening at our institute. Comprising talented individuals with a passion for media and creativity, the Crew ensures that every moment, from seminars and workshops to cultural festivals and sports activities, is captured and shared with the community. </p>
             <div class="buttons">
@@ -75,7 +82,7 @@
             </div>
         </div>
         <br>
-        <div class="CBS">
+        <div class="society-card CBS">
             <h2>Character Building Society (CBS)</h2>
             <p>The main goal of the Character-Building Society is to provide exploration, build the character of students, opportunity for knowledge, things going go in the era, character, personality development to have savoir-faire, nurture their enterprising skills, and to interact with students and members, having same interests in the field.</p>
             <div class="buttons">
@@ -85,17 +92,20 @@
             </div>  
         </div>
         <br>
-        <div class="ACM-W">
+        <div class="society-card ACM-W">
             <h2>ACM-Women</h2>
             <p>In today's world, where opportunities for women are secondary, ACM is set to bring forward a platform "ACM - W" just for women, where they would be able to polish and showcase the talent, the capability and the creativity they possess. ACM-W target is to help the women of FAST NUCES to discover and uncover their abilities and coding skills, with the aim that these gifted women become able enough to achieve success beyond measure in the field of computer science in the coming future, and fulfill the purpose of the establishment of ACM -W.</p>
             <div class="buttons">
+                <div class="event_registration">
+                    <h2><a href="events.html#empowerfest" target="_blank">Event Registration</a></h2>
+                </div>
                 <div class="join_the_team">
                     <h2><a href="join.html#Acmw" target="_blank">Join ACM-W</a></h2>
                 </div>
             </div>
         </div>
         <br>
-        <div class="IEEE">
+        <div class="society-card IEEE">
             <h2>IEEE-FAST NUCES Chapter</h2>
             <p>
                 The IEEE NUCES aims to integrate the students and provide them with a platform where they can be recognized for their contributions to the development and advancement of technology for humanity. IEEE NUCES plays an important role in reducing the gap between the industry and students through innovative programs and projects. 
@@ -107,7 +117,7 @@
             </div>
         </div>
         <br>
-        <div class="GDSC">
+        <div class="society-card GDSC">
             <h2>Google Developers' Student Club (GDSC)</h2>
             <p>GDSC is for Developer Student Clubs and is powered by Google Developers to help and support the developer community within campuses around the globe. Developer Student Clubs train thousands of student developers globally and work with their communities to solve real-life problems. University students who lead a DSC gain access to Google technology, events, and mentor-ship while training their local community through fun meetups, project-building activities, and global competitions.</p>
             <div class="buttons">
@@ -117,138 +127,129 @@
             </div>
             <br>
             </div>
-            <div class="FDSS">
-                <h2>FAST Data Science Society (FDSS)</h2>
-                <p>
-                    FAST Data Science Society (FDSS) is focused on bridging the gap between disciplines to help all students answer the questions that matter to them. Through our talks, teaching, and research we aim to educate and inspire everyone about data science. Our mission is to foster a strong data science community on campus. We aim to build an inclusive and accessible community where students of all levels and backgrounds can dive into the world of data science.
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Fdss" target="_blank">Join FDSS</a></h2>
-                    </div>
+        <div class="society-card FDSS">
+            <h2>FAST Data Science Society (FDSS)</h2>
+            <p>FAST Data Science Society (FDSS) is focused on bridging the gap between disciplines to help all students answer the questions that matter to them. Through our talks, teaching, and research we aim to educate and inspire everyone about data science. Our mission is to foster a strong data science community on campus. We aim to build an inclusive and accessible community where students of all levels and backgrounds can dive into the world of data science.</p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Fdss" target="_blank">Join FDSS</a></h2>
                 </div>
             </div>
-            <br>
-            <div class="ACM-Nuces">
-                <h2>ACM-Nuces</h2>
-                <p>
-                    At ACM-NUCES KHI Chapter, you join a team that aims to change the methodology with which students approach computing and technology. We do our utmost to deliver the latest, and most innovative educational and professional development resources that our members require to strengthen their skill sets and enrich their careers. Most importantly, we take your view into consideration. 
-                </p>
-                <div class="buttons">
-                    <div class="event_registration">
-                        <h2><a href="events.html#coderscup" target="_blank">Event Registration</a></h2>
-                    </div>
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Acmnuces" target="_blank">Join ACM Nuces</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="ACM-SE">
-                <h2>ACM-Software Engineering</h2>
-                <p>ACM SE is now opening its doors for every single student who belongs to the Software Engineering department to have the opportunity to conduct a direct meeting with the amazing revolutionary team of ACM SE who are the pioneers and are passionate and devoted for the recognition of the Software Engineering department and success of this society. Every student will have an equal opportunity to question any member of the society to learn more about Software Engineering and ACM SE.</p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Acmse" target="_blank">Join ACM-SE</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="ACM-CY">
-                <h2>ACM - Cyber Security</h2>
-                <p>ACM Cyber security is a registered student organization at FAST-NUCES (Karachi) where students get the chance to learn about cyber security and hone their skills under the supervision of seasoned mentors of the field. We will have a healthy mix of industry professionals and students (beginner and advanced), who will work with each other, and enable the students to gain hands-on technical experience that is needed in the real-world trenches of the cyber space.
-                </p>
-                <div class="buttons">
-                    <div class="event_registration">
-                        <h2><a href="events.html#protocolgenesis" target="_blank">Event Registration</a></h2>
-                    </div>
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Acmcy" target="_blank">Join ACM-CY</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="ACM-AI">
-                <h2>ACM-Aritificial Intelligence</h2>
-                <p>Association for Computing Machinery Intelligence in FAST NUCES is to promote and support the growth and application of artificial intelligence (AI) principles and techniques throughout computing. ACM AI holds machine learning workshops, provides quarter/year-long project opportunities, coordinates with professors and grad students to give tech talks, and teaches Al to students.</p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Acmai" target="_blank">Join ACM-AI</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="RAS">
-                <h2>Robotics & Automation Society (RAS)</h2>
-                <p>Robotics and Automation Society can be a rewarding initiative, as it can provide a platform for students with a shared interest in these fields to collaborate, learn, and contribute to the advancement of robotics and automation. <br>The plans of this society: <br>Promoting interest, knowledge, and skills in robotics and automation.<br>To organize mega events of robotics competitions across Karachi & Pakistan.<br>To make a gateway to arrange the funds for the students interested in making robots.<br>To make this society professional, promoting new startups in the future.</p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Ras" target="_blank">Join RAS</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="FES">
-                <h2>FAST Entrepreneurship Society (FES)</h2>
-                <p>
-                    The formation of the Entrepreneurship Society will help bridge this gap and provide students with the resources and support they need to succeed as entrepreneurs. It would focus solely on promoting entrepreneurship among students and organize a range of events such as guest speaker talks, networking events, and workshops on topics such as pitching, marketing, and funding. Additionally, this society publishes a monthly newsletter that highlights the latest news, opportunities, and success stories from the world of entrepreneurship. This newsletter will also provide a platform for students to showcase their ventures, receive feedback, and connect with potential collaborators. 
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Fes" target="_blank">Join FES</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="MLSA">
-                <h2>Microsoft Learn Student Ambassador (MLSA)</h2>
-                <p>
-                    The MLSA society is an extension of Microsoft Learn Student Ambassador Program, which is a global community of students who want to use tech to solve real-world problems with like-minded peers, establish themselves as mentors and leaders in their community, and amplify their impact in the real world, both locally and globally. 
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Mlsa" target="_blank">Join MLSA</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="AWS_Cloud_Club">
-                <h2>AWS Cloud Club FAST-NUCES Karachi</h2>
-                <p>
-                    The first AWS Cloud Club at FAST NUCES, dedicated to empowering students with cloud computing skills. Join us to Learn, Build, and Connect with AWS technologies through hands-on workshops, real-world projects, and expert-led sessions
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2>Join AWS Cloud Club (in person interviews)</h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="Github_Campus_Club">
-                <h2>Github Campus Club</h2>
-                <p>
-                    GitHub Campus Clubs are student-led, GitHub-supported 2000+ communities at universities that foster collaboration, learning, and innovation through real world software development. It will bring the global power of open source and the developer community to the campus. Here at Fast NUCES, we would like to empower students to experience open-source practices, build technical and tinkering skills, participate in significant projects within our university and eventually develop world class GitHub Campus Club. 
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Github" target="_blank">Join Github Campus Club</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="Procom">
-                <h2>Procom</h2>
-                <p>
-                    PROCOM is the flagship event in FAST NUCES Karachi, It's a terrific blend of computer science, electrical and electronics engineering, business studies, arts, and literature which have become the need of industries today. In today's cut-throat competitions, the speed and efficiency of software backed by a blend of engineering technologies, an engineer's analytical ability and a businessman's sound knowledge of the market create products that comply with the needs of the business. This blend is sure to provide extremely important impetus to the efforts of the young people behind the products.
-                </p>
-                <div class="buttons">
-                    <div class="join_the_team">
-                        <h2><a href="join.html#Procom" target="_blank">Join Procom</a></h2>
-                    </div>
-                </div>
-            </div>
-            <br>
         </div>
+        <br>
+        <div class="ACM-Nuces">
+            <h2>ACM-Nuces</h2>
+            <p>At ACM-NUCES KHI Chapter, you join a team that aims to change the methodology with which students approach computing and technology. We do our utmost to deliver the latest, and most innovative educational and professional development resources that our members require to strengthen their skill sets and enrich their careers. Most importantly, we take your view into consideration. </p>
+            <div class="buttons">
+                <div class="event_registration">
+                    <h2><a href="events.html#coderscup" target="_blank">Event Registration</a></h2>
+                </div>
+                <div class="join_the_team">
+                    <h2><a href="join.html#Acmnuces" target="_blank">Join ACM Nuces</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="ACM-SE">
+            <h2>ACM-Software Engineering</h2>
+            <p>ACM SE is now opening its doors for every single student who belongs to the Software Engineering department to have the opportunity to conduct a direct meeting with the amazing revolutionary team of ACM SE who are the pioneers and are passionate and devoted for the recognition of the Software Engineering department and success of this society. Every student will have an equal opportunity to question any member of the society to learn more about Software Engineering and ACM SE.</p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Acmse" target="_blank">Join ACM-SE</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="ACM-CY">
+            <h2>ACM - Cyber Security</h2>
+            <p>ACM Cyber security is a registered student organization at FAST-NUCES (Karachi) where students get the chance to learn about cyber security and hone their skills under the supervision of seasoned mentors of the field. We will have a healthy mix of industry professionals and students (beginner and advanced), who will work with each other, and enable the students to gain hands-on technical experience that is needed in the real-world trenches of the cyber space.
+            </p>
+            <div class="buttons">
+                <div class="event_registration">
+                    <h2><a href="events.html#protocolgenesis" target="_blank">Event Registration</a></h2>
+                </div>
+                <div class="join_the_team">
+                    <h2><a href="join.html#Acmcy" target="_blank">Join ACM-CY</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="ACM-AI">
+            <h2>ACM-Aritificial Intelligence</h2>
+            <p>Association for Computing Machinery Intelligence in FAST NUCES is to promote and support the growth and application of artificial intelligence (AI) principles and techniques throughout computing. ACM AI holds machine learning workshops, provides quarter/year-long project opportunities, coordinates with professors and grad students to give tech talks, and teaches Al to students.</p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Acmai" target="_blank">Join ACM-AI</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="RAS">
+            <h2>Robotics & Automation Society (RAS)</h2>
+            <p>Robotics and Automation Society can be a rewarding initiative, as it can provide a platform for students with a shared interest in these fields to collaborate, learn, and contribute to the advancement of robotics and automation. <br>The plans of this society: <br>Promoting interest, knowledge, and skills in robotics and automation.<br>To organize mega events of robotics competitions across Karachi & Pakistan.<br>To make a gateway to arrange the funds for the students interested in making robots.<br>To make this society professional, promoting new startups in the future.</p>
+            <div class="buttons">
+                <div class="event_registration">
+                    <h2><a href="events.html#techverse" target="_blank">Event Registration</a></h2>
+                </div>
+               <div class="join_the_team">
+                    <h2><a href="join.html#Ras" target="_blank">Join RAS</a></h2>
+                </div>
+               </div>
+        </div>
+        <br>
+        <div class="FES">
+            <h2>FAST Entrepreneurship Society (FES)</h2>
+            <p>The formation of the Entrepreneurship Society will help bridge this gap and provide students with the resources and support they need to succeed as entrepreneurs. It would focus solely on promoting entrepreneurship among students and organize a range of events such as guest speaker talks, networking events, and workshops on topics such as pitching, marketing, and funding. Additionally, this society publishes a monthly newsletter that highlights the latest news, opportunities, and success stories from the world of entrepreneurship. This newsletter will also provide a platform for students to showcase their ventures, receive feedback, and connect with potential collaborators. </p>
+            <div class="buttons">
+                <div class="event_registration">
+                    <h2><a href="events.html#igniteX" target="_blank">Event Registration</a></h2>
+                </div>
+                <div class="join_the_team">
+                    <h2><a href="join.html#Fes" target="_blank">Join FES</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="MLSA">
+            <h2>Microsoft Learn Student Ambassador (MLSA)</h2>
+            <p>The MLSA society is an extension of Microsoft Learn Student Ambassador Program, which is a global community of students who want to use tech to solve real-world problems with like-minded peers, establish themselves as mentors and leaders in their community, and amplify their impact in the real world, both locally and globally. </p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Mlsa" target="_blank">Join MLSA</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="AWS_Cloud_Club">
+            <h2>AWS Cloud Club FAST-NUCES Karachi</h2>
+            <p>The first AWS Cloud Club at FAST NUCES, dedicated to empowering students with cloud computing skills. Join us to Learn, Build, and Connect with AWS technologies through hands-on workshops, real-world projects, and expert-led sessions</p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2>Join AWS Cloud Club (in person interviews)</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Github_Campus_Club">
+            <h2>Github Campus Club</h2>
+            <p>GitHub Campus Clubs are student-led, GitHub-supported 2000+ communities at universities that foster collaboration, learning, and innovation through real world software development. It will bring the global power of open source and the developer community to the campus. Here at Fast NUCES, we would like to empower students to experience open-source practices, build technical and tinkering skills, participate in significant projects within our university and eventually develop world class GitHub Campus Club. </p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Github" target="_blank">Join Github Campus Club</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Procom">
+            <h2>Procom</h2>
+            <p>PROCOM is the flagship event in FAST NUCES Karachi, It's a terrific blend of computer science, electrical and electronics engineering, business studies, arts, and literature which have become the need of industries today. In today's cut-throat competitions, the speed and efficiency of software backed by a blend of engineering technologies, an engineer's analytical ability and a businessman's sound knowledge of the market create products that comply with the needs of the business. This blend is sure to provide extremely important impetus to the efforts of the young people behind the products.</p>
+            <div class="buttons">
+                <div class="join_the_team">
+                    <h2><a href="join.html#Procom" target="_blank">Join Procom</a></h2>
+                </div>
+            </div>
+        </div>
+        <br>
     </main>
     <footer>
         <p class="footer-left">Developed by: Rabisa Ali (25K-0876) </p>
