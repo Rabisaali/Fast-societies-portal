@@ -1,8 +1,8 @@
-# 🎀**FAST Campus Societies Portal**
+# ᯓ★ ̊**FAST Campus Societies Portal**
 
 A centralized platform designed to bring all FAST NUCES Karachi societies into one place. This portal aims to make it easier for students to explore societies, view events, and join them.
 
-## ✨Features
+## ⋆˙⟡ Features ⋆˙⟡
 
 * Society Listings – Browse all official societies of FAST Karachi.
 
