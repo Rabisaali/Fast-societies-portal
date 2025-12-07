@@ -313,10 +313,10 @@ footer {
     border-radius: 50px;
     border: 2px solid #2f0b3e;
     margin: 25px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
+    place-items: center;
     padding: 10px 30px;
 }
 
