@@ -68,3 +68,28 @@ if (icons.length && tooltip) {
     });
   });
 }
+// Search filter for Join Now and Events page
+const joinSearch = document.getElementById("join-search-bar");
+const eventCards = document.querySelectorAll(".events-container .event-card");
+
+if (joinSearch && eventCards.length) {
+  joinSearch.addEventListener("keyup", () => {
+    const value = joinSearch.value.toLowerCase();
+
+    eventCards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(value)) {
+        card.style.visibility = "visible";
+        card.style.position = "relative";
+        card.style.height = "auto";
+        card.style.margin = "";
+      } else {
+        card.style.visibility = "hidden";
+        card.style.position = "absolute";
+        card.style.height = "0";
+        card.style.margin = "0";
+      }
+    });
+  });
+}
+
