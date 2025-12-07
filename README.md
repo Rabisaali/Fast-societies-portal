@@ -4,11 +4,13 @@ A centralized platform designed to bring all FAST NUCES Karachi societies into o
 
 ## ⋆˙⟡ Features ⋆˙⟡
 
-* Society Listings – Browse all official societies of FAST Karachi.
+* Society Listings - Browse all official societies of FAST Karachi.
 
-* Event Management – View upcoming and past events.
+* Event Management - View upcoming and past events.
 
 * Society Inductions - Be part of the campus societies.
+
+### Link: https://rabisaali.github.io/Fast-societies-portal/
 
 ### Rabisa Ali (25K-0876)
 
